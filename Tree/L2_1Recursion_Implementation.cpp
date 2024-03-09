@@ -31,4 +31,4 @@ int main(){
     cout<<"Enter the root No. : ";
     Node *root;
     root = BinaryTree();
-}
+}    
