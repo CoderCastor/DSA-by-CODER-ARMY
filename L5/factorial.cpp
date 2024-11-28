@@ -9,6 +9,6 @@ int main()
     for(i;i<=num;i++){
         product = product * i;
     }
-    cout<<"FACTORIAL of "<<num<<" is : "<<product;
+    cout<<"FACTORIAL of "<<name<<" is : "<<product;
     return 0;
 }
