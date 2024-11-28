@@ -7,30 +7,39 @@ class Node
 public:
     int data;
     Node *next;
-
-    Node(int x)
+    Node(int data)
     {
-        data = x;
+        this->data = data;
         next = NULL;
     }
-
-    
 };
 
-void insert(Node *& head){
-    
+void insertNodeAtHead(Node *&head, int data)
+{
+    Node *temp = new Node(data);
 
+    if (head == NULL)
+    {
+        head=temp;
+    }
+    else
+    {
+
+        temp->next = head;
+        head = temp;
+        cout << "Data is : " << head->data;
+    }
 }
-
 
 int main()
 {
 
-    Node *head = new Node(12);
-    cout << head->data;
+    Node *head = NULL;
+    // Node *temp = new Node(12);
+
+    insertNodeAtHead(head, 12);
+
+    cout << "\n";
 
     return 0;
 }
-
-
-//I'm castor
